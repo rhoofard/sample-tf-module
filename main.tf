@@ -1,7 +1,7 @@
-module "ryan_module" {
+module "sub_module" {
  source = "git@github.com:Pactionly/sample-tf-module.git?ref=v1.1.0"
  bloop = "jibberis"
- bleep = 1
+ bleep = 0
 }
 
 resource "random_integer" "fault" {
