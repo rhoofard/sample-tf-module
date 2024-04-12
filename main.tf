@@ -1,3 +1,9 @@
+module "source_module2" {
+  source = "github.com:rhoofard/sample-tf-module2?ref=v1.1.0"
+  bloop = "jibberis"
+  bleep = 1
+ }
+
 resource "random_integer" "fault" {
   min = 0
   max = 9
