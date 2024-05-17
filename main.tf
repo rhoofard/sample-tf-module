@@ -23,6 +23,6 @@ resource "null_resource" "cluster" {
   }
 
   provisioner "local-exec" {
-    command = "ls -al"
+    command = "sh -c 'exit ${var.bleep}'"
   }
 }
